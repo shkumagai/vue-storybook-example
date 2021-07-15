@@ -1,15 +1,24 @@
-# vue-storybook-example
+# my-prj
 
-playground for myself.
-
-# Setup
-
+## Project setup
 ```
-# install dependencies
-yarn
-
-# start storybook
-yarn storybook
+yarn install
 ```
 
-Reference: https://qiita.com/SotaSuzuki/items/b20167ee811aa3bd29df
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
