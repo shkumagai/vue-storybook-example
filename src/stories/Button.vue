@@ -4,11 +4,11 @@
   </button>
 </template>
 
-<script>
+<script lang="ts">
 import "./button.css";
-import { reactive, computed } from "vue";
+import { reactive, computed, defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: "my-button",
 
   props: {
@@ -22,7 +22,7 @@ export default {
     },
     size: {
       type: String,
-      validator: function (value) {
+      validator: function (value: string): boolean {
         return ["small", "medium", "large"].indexOf(value) !== -1;
       },
     },
@@ -50,5 +50,5 @@ export default {
       },
     };
   },
-};
+});
 </script>
